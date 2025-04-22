@@ -1,14 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Quote Scraper",
+  "name": "LinkedIn Sales Navigator Scraper",
   "version": "1.0",
-  "description": "Scrape quotes from a website.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["*://*.linkedin.com/*"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icon.png"
-  },
-  "background": {
-    "service_worker": "background.js"
+    "default_icon": {
+      "128": "icon.png"
+    }
   }
 }
